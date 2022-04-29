@@ -1,0 +1,234 @@
+/* ROOT VARIABLES */
+:root{
+    --color-white: #fff;
+    --color-light: #f4f4f4;
+    --color-dark: #525252;
+    --color-black: #141415;
+    --color-primary: #f24e1e;
+    --color-primary-light: hsl(14, 89%, 53%, 12%);
+    --color-success: #29f5a6;
+    --color-warning: #ffce31;
+
+    --transition: all 300ms ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    border:0;
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration:none;
+}
+
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-dark);
+    max-width: 100vw;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+    color: var(--color-black);
+    line-height: 1.2em;
+}
+
+h1{
+    font-size: 3.8em;
+}
+
+h2{
+    font-size: 2.6em;
+}  
+
+h3{
+    font-size: 1.6em;
+}
+
+h4{
+    font-size: 1.2em;
+}
+h5{
+    font-size: 0.86em;
+}
+
+p{
+    line-height: 1.8em;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+section{
+    padding: 10em 0 7em;
+    max-width: 75vw;
+    overflow-x: hidden;
+}
+
+section h1{
+    text-align: center;
+    display: block;
+    margin-bottom: 5em;
+}
+
+img{
+    width: 100%;
+}
+
+.btn{
+    padding: 1.4em 3.4em;
+    font-size: 1.1em;
+    color: var(--color-black);
+    background: var(--color-white);
+    display: inline-block;
+    margin: 2em 0;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    box-shadow: 0 2em 2em var(--color-light);
+}
+
+
+.btn-primary{
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+/*=======================NAVBAR
+========================*/
+nav{
+    width: 100%;
+    height: 5em;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--color-light);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav button {
+    display: none;
+}
+
+nav h3 {
+    color: var(--color-primary);
+}
+
+nav .container ul {
+    display: flex;
+    height: 100%;
+}
+
+nav .container ul li a {
+    height: 100%;
+    width: 7rem;
+    background: rgb(185, 89, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    position: relative;
+    transition: var(--transition);
+}
+
+nav .container ul li a:hover {
+    color: var(--color-primary);
+}
+nav .container ul li a.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+
+
+/*=============Social Media==============*/
+.social {
+    padding: 4em;
+    font-size: 1em;
+    width: 1em;
+    text-align: left;
+    margin: 5px 5px;
+    border-radius: 25%;
+    height: 2rem;
+    display: flex;
+    z-index: 2;
+    position:relative;
+    object-position: 100% 50%;
+}
+
+.social:hover {
+    opacity: 0.7;
+}
+
+.social:fa-facebook {
+    background: var(--color-dark);
+    color: white;
+}
+
+.social:fa-instagram {
+    background: var(--color-dark);
+    color: white;
+}
+
+.social:fa-linkedin {
+    background: var(--color-dark);
+    color: white;
+}
+
+/* =============================LANDING SECTION=============================*/
+section.landing {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 5em;
+    padding-bottom: 14em;
+}
+
+section.landing.container {
+    display: grid;
+    grid-template-columns: 5em auto 28em;
+    gap: 1em;
+}
+
+section.landing.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    margin-top: 5em;
+}
+
+section.landing.socials a{
+    font-size: 1.1em;
+    background: var(--color-light);
+    color: var(--color-dark);
+    padding: 0.3em;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
